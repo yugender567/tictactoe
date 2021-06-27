@@ -1,9 +1,9 @@
 import React from 'react';
 import Square from './Square';
 
-const Board = ({ board, handleSquareClick, winningsquares }) => {
+const Board = ({ board, handleSquareClick, winningSquares }) => {
   const renderSquare = position => {
-    const isWinningSquares = winningsquares.inculde(position);
+    const isWinningSquares = winningSquares.includes(position);
 
     return (
       <Square
